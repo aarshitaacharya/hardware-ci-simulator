@@ -44,9 +44,3 @@ class Kernel:
             "metadata": self.metadata
         }
         
-
-k1 = Kernel("v1")
-k2 = Kernel("v2")
-
-print(k1.info())
-print(k2.info())
