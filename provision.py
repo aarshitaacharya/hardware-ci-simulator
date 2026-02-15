@@ -9,7 +9,7 @@ import random
 NODES = {
     "node-01": {"status": "available"},
     "node-02": {"status": "available"},
-    "node-03": {"status": "available"}
+    # "node-03": {"status": "available"}
 }
 
 def reserve_node():
