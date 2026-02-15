@@ -41,8 +41,3 @@ def flash_firmware(node):
     print(f"{node}: flashing firmware")
     time.sleep(0.5)
     print("firmware updated")
-
-node = reserve_node()
-flash_firmware(node)
-pxe_boot(node, "v2")
-release_node(node)
