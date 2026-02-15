@@ -2,10 +2,11 @@ from kernel import Kernel
 from tests import run_all_tests
 from validate import check_regression
 import sys
+from provision import reserve_node, release_node, pxe_boot, flash_firmware
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python validate.py <kernel_version>")
+        print("Usage: python main.py <kernel_version>")
         sys.exit(1)
 
     kernel_version = sys.argv[1]
